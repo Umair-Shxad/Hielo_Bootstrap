@@ -1,0 +1,373 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #dbdbdb;
+}
+
+/***********************************************
+                        Header CSS
+*********************************************************/
+
+.header-container{
+    padding: 0;
+    position: relative;
+}
+
+/* Navgation CSS */
+
+#my-Navigation{
+    background: none;
+    border: none;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+}
+
+#my-Navigation .navbar-header{
+    float: none;
+}
+
+#my-Navigation .navbar-toggle{
+    float: right;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+}
+
+#my-Navigation .navbar-toggle:hover,
+#my-Navigation .navbar-toggle:focus{
+    background: none;
+}
+
+#my-Navigation a{
+    color: #fff;
+}
+
+#my-Navigation a:hover,
+#my-Navigation a:focus{
+    color: #dfdfdf;
+}
+
+#my-Navigation .navbar-toggle .icon-bar-left{
+    float: left;
+}
+
+#my-Navigation .icon-bar-left .icon-bar{
+    background: #fff;
+}
+
+#my-Navigation .navbar-toggle .icon-right{
+    float: right;
+    position: relative;
+    top: -3px;
+    padding-left: 10px;
+}
+
+#my-Navigation .navbar-brand{
+    font-weight: 700;
+}
+
+#my-Navigation .custom-brand{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#my-Navigation .navbar-right{
+    float: left!important;
+}
+
+/* Carousel CSS */
+
+.item{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/slide01.jpg");
+    background-size: cover;
+}
+
+.item-2{
+    background-image: url("../img/slide02.jpg");
+}
+
+.item-3{
+    background-image: url("../img/slide03.jpg");
+}
+
+.item-4{
+    background-image: url("../img/slide04.jpg");
+}
+
+.item-5{
+    background-image: url("../img/slide05.jpg");
+}
+
+/* Banner CSS */
+
+.banner-text{
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 3;
+    color: #fff;
+}
+
+.banner-text p{
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-text hr{
+    width: 50%;
+}
+
+.banner-text h1{
+    font-size: 120px;
+    font-weight: 200;
+}
+
+/***********************************************
+                        Two Box CSS
+*********************************************************/
+
+.two-box{
+    background: #fff;
+    margin: 80px 0;
+    width: 95%;
+    text-align: center;
+}
+
+.two-box img{
+    width: 100%;
+}
+
+.left-box{
+    margin-left: 5%;
+}
+
+.text{
+    padding: 7% 5%;
+}
+
+.text h5{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #777777;
+}
+
+.text hr{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.text h3{
+    margin: 10px auto;
+}
+
+.text p{
+    padding: 20px 10px;
+    line-height: 25px;
+    text-align: left;
+    color: grey;
+}
+
+.text button{
+    width: 130px;
+    height: 40px;
+    border: 2px solid #dfdfdf;
+    background: none;
+    outline: none;
+}
+
+.text button:hover,
+.text button:focus{
+    color: grey;
+}
+
+/***********************************************
+                        Quote CSS
+*********************************************************/
+
+.full-quote{
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.quote{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.quote p{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.quote hr{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.quote h3{
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/***********************************************
+                        Four Box CSS
+*********************************************************/
+
+.four-box{
+    margin: 70px 0;
+}
+
+.four-box .quote{
+    color: #333333!important;
+    padding: 0 0 20px;
+}
+
+.four-box img{
+    width: 95%;
+    border: 10px solid #fff;
+    margin-bottom: 60px;
+}
+
+.four-box .left{
+    margin-left: 5%;
+}
+
+.no-margin{
+    margin-bottom: 0!important;
+}
+
+/***********************************************
+                        Footer CSS
+*********************************************************/
+
+.footer-wrapper{
+    background: #000;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 30px;
+    color: grey;
+}
+
+.social-icon .fa{
+    font-size: 25px;
+    color: grey;
+    padding: 5px;
+}
+
+.social-icon .fa:hover,
+.social-icon .fa:focus{
+    color: #fff;
+}
+
+.footer p{
+    padding: 30px 0;
+}
+
+/***********************************************
+                        Media Query
+*********************************************************/
+
+@media (max-width:767px){
+    #my-Navigation .my-collapse{
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid #fff;
+    }
+
+    .banner-text{
+        width: 80%;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+    }   
+    .banner-text p{
+        letter-spacing: 2px;
+        font-size: 12px;
+    }   
+    .banner-text hr{
+        width: 70%;
+    }
+    .banner-text h1{
+        font-size: 80px;
+    }
+
+    .two-box{
+        width: 100%;
+    }
+    .left-box{
+        margin-left: 0;
+    }
+    .text h5{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .text hr{
+        width: 50%;
+    }
+    .text h3{
+        margin: 10px auto;
+    }
+    .text p{
+        line-height: 22px;
+        text-align: center;
+    }
+    .text button{
+        width: 100%;
+        height: 40px;
+    }
+
+    .quote{
+        padding: 0;
+    }
+    .quote p{
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+    .quote hr{
+        width: 50%;
+    }
+    .quote h3{
+        font-size: 18px;
+    }
+
+    .four-box{
+        margin: 50px 0;
+    }
+    .four-box img{
+        width: 100%;
+        border: 10px solid #fff;
+        margin-bottom: 30px!important;
+    }
+    .four-box .left{
+        margin-left: 0;
+    }
+
+    .footer{
+        padding: 40px 0 20px;
+    }
+    
+    .social-icon .fa{
+        font-size: 20px;
+    }
+    
+    .footer p{
+        padding: 20px 0;
+    }
+    
+}
